@@ -166,6 +166,10 @@ vim.o.scrolloff = 8
 -- See `:help 'confirm'`
 vim.o.confirm = true
 
+-- Fold code blocks
+vim.opt.foldmethod = 'indent'
+vim.opt.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 

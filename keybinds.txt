@@ -8,6 +8,7 @@
 <C-i>		{ desc = 'Jumback to previous cursor line' })
 <C-^>		{ desc = 'Go back to previous opened file' }
 <C-w>		{ desc = 'Window manipulation' }
+<za>		{ desc = 'Fold at cursor based on indent' }
 
 # Telescope - search
 <leader>sh	{ desc = '[S]earch [H]elp' })
