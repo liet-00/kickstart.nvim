@@ -167,8 +167,8 @@ vim.o.scrolloff = 8
 vim.o.confirm = true
 
 -- Fold code blocks
-vim.opt.foldmethod = 'indent'
-vim.opt.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+-- vim.opt.foldmethod = 'indent'
+-- vim.opt.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
@@ -677,6 +677,7 @@ require('lazy').setup({
       local servers = {
         -- clangd = {},
         -- gopls = {},
+        ansiblels = {},
         pyright = {},
         -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
@@ -970,6 +971,13 @@ require('lazy').setup({
     --    - Incremental selection: Included, see `:help nvim-treesitter-incremental-selection-mod`
     --    - Show your current context: https://github.com/nvim-treesitter/nvim-treesitter-context
     --    - Treesitter + textobjects: https://github.com/nvim-treesitter/nvim-treesitter-textobjects
+  },
+
+  {
+    'numToStr/Comment.nvim',
+    opts = {
+      -- add any options here
+    },
   },
 
   -- The following comments only work if you have downloaded the kickstart repo, not just copy pasted the
